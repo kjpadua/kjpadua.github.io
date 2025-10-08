@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kim Padua | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-pink" href="#">Kim Padua</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#about" class="btn btn-pink ms-3">About Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero d-flex align-items-center" id="home">
+    <div class="container text-center text-lg-start mt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mt-5" data-aos="fade-right">
+          <span class="badge bg-pink mb-3 px-3 py-2 text-black">IT Student / Developer</span>
+          <h1 class="fw-bold display-5">Hi, I'm <span class="text-pink">Kim Padua</span></h1>
+          <p class="lead text-light mt-3">
+            A 3rd Year BSIT student passionate about creating beautiful and functional digital experiences.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink me-2">Download CV</a>
+            <a href="#projects" class="btn btn-outline-light">View Projects</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="zoom-in">
+          <div class="profile-circle">
+            <img src="myphoto.png" alt="Your Photo" class="img-fluid rounded-circle shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+<section id="about" class="py-5 bg-dark text-light">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-lg-5 text-center mb-4 mb-lg-0">
+        <img src="myphoto.png" alt="Kim Padua" class="img-fluid rounded-circle shadow-lg about-photo">
+      </div>
+      <div class="col-lg-7">
+        <h2 class="fw-bold text-pink mb-3">My Journey, Goals & Vision</h2>
+
+        <h5 class="text-pink mt-3"> My Journey</h5>
+        <p>
+          My journey began with a deep curiosity about how technology shapes the world around us. 
+          As a 3rd Year BSIT student, I’ve been learning the fundamentals of programming, design, and system development — 
+          transforming simple ideas into real digital projects. Every challenge I face helps me grow not only as a student but as a future developer.
+        </p>
+
+        <h5 class="text-pink mt-4"> My Goals</h5>
+        <p>
+          My goal is to become a skilled IT professional who can create user-friendly, efficient, and innovative digital solutions. 
+          I aim to work with people who share the same passion for technology and continuous learning, and eventually contribute to projects that make a real-world impact.
+        </p>
+
+        <h5 class="text-pink mt-4"> My Vision</h5>
+        <p>
+          I envision myself building technology that connects, empowers, and inspires people. 
+          I want to keep improving — not just in coding, but in creativity, collaboration, and leadership — 
+          so I can help shape a better, more inclusive digital future.
+        </p>
+
+        <div class="mt-4">
+          <a href="#projects" class="btn btn-pink me-2">View My Projects</a>
+          <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="py-5 bg-black text-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="text-pink fw-bold">My Projects</h2>
+        <p class="text-secondary">Here are some of my recent works</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="card project-card h-100">
+            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Project 01</h5>
+              <p class="card-text">Project description</p>
+              <a href="#" class="btn btn-pink btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="flip-up">
+          <div class="card project-card h-100">
+            <img src="project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Project 02</h5>
+              <p class="card-text">Project description</p>
+              <a href="#" class="btn btn-pink btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="flip-right">
+          <div class="card project-card h-100">
+            <img src="project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Project 03</h5>
+              <p class="card-text">Project description</p>
+              <a href="#" class="btn btn-pink btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="py-5 bg-dark text-light">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-pink">Skills & Tools</h2>
+        <p class="text-secondary">Technologies I use and learn</p>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">HTML / CSS / JS</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">Python</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">Java</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">SQL / MySQL</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">C / C++</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">Git / GitHub</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">Figma</div></div>
+        <div class="col-md-3 mb-4" data-aos="zoom-in"><div class="skill-box">Bootstrap</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-5 bg-black text-light">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="text-pink fw-bold mb-3">Contact Me</h2>
+      <p class="mb-4">Let’s connect! You can reach me through:</p>
+      <p>
+         <strong>Email:</strong> kjpadua.au@gmail.com <br>
+         <strong>Phone:</strong> +63 966 941 0572 <br>
+         <strong>GitHub:</strong> <a href="https://github.com/kjpadua" class="text-pink">github.com/kjpadua</a>
+      </p>
+      <div class="social-icons mt-3">
+        <a href="#" class="text-pink me-3"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="text-pink me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#" class="text-pink"><i class="fab fa-github fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center py-3 bg-black text-secondary">
+    <p>© 2025 Kim Padua | All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120
+    });
+  </script>
+</body>
+</html>
+
