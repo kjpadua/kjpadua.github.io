@@ -375,6 +375,141 @@
       opacity: 1;
     }
 
+    /* Education Cards */
+    .education-card {
+      background: var(--dark-gray);
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+      height: 100%;
+      position: relative;
+    }
+
+    .education-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--baby-pink);
+      box-shadow: 0 0 30px var(--glow-pink);
+    }
+
+    .education-card i {
+      font-size: 2.5rem;
+      color: var(--baby-pink);
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 10px var(--glow-pink));
+    }
+
+    /* Certification Cards */
+    .cert-card {
+      background: var(--dark-gray);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .cert-card:hover {
+      transform: translateX(5px);
+      border-color: var(--baby-pink);
+      box-shadow: 0 0 20px var(--glow-pink);
+    }
+
+    .cert-card i {
+      font-size: 2rem;
+      color: var(--baby-pink);
+      filter: drop-shadow(0 0 10px var(--glow-pink));
+    }
+
+    /* Experience Timeline */
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-item {
+      padding: 20px;
+      background: var(--dark-gray);
+      border-radius: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .timeline-item:hover {
+      transform: translateX(10px);
+      border-color: var(--baby-pink);
+      box-shadow: 0 0 30px var(--glow-pink);
+    }
+
+    .timeline-date {
+      color: var(--baby-pink);
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timeline-date i {
+      filter: drop-shadow(0 0 10px var(--glow-pink));
+    }
+
+    /* Language Cards */
+    .language-card {
+      background: var(--dark-gray);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+      height: 100%;
+      text-align: center;
+    }
+
+    .language-card:hover {
+      transform: scale(1.05);
+      border-color: var(--baby-pink);
+      box-shadow: 0 0 30px var(--glow-pink);
+    }
+
+    .language-level {
+      background: rgba(255, 182, 193, 0.1);
+      color: var(--baby-pink);
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+
+    /* Hobbies Cards */
+    .hobby-card {
+      background: var(--dark-gray);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+      height: 100%;
+      text-align: center;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--baby-pink);
+      box-shadow: 0 0 30px var(--glow-pink);
+    }
+
+    .hobby-card i {
+      font-size: 2.5rem;
+      color: var(--baby-pink);
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 10px var(--glow-pink));
+    }
+
     /* Social Icons with Glow */
     .social-icons a {
       display: inline-block;
@@ -589,6 +724,34 @@
     section:last-of-type::after {
       display: none;
     }
+
+    /* Achievement Stats */
+    .stat-item {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark-gray);
+      border-radius: 15px;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-5px);
+      border-color: var(--baby-pink);
+      box-shadow: 0 0 30px var(--glow-pink);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--baby-pink);
+      text-shadow: 0 0 10px var(--glow-pink);
+    }
+
+    .stat-label {
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 
@@ -605,11 +768,12 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <a href="#about" class="btn btn-pink ms-lg-3">About Me</a>
       </div>
     </div>
   </nav>
@@ -649,11 +813,12 @@
           <img src="aboutphoto.jpg" alt="Kim Padua" class="img-fluid rounded-circle shadow-lg about-photo">
         </div>
         <div class="col-lg-7">
-          <h2 class="fw-bold text-pink mb-3">My Journey, Goals & Vision</h2>
-
+          <h2 class="fw-bold text-pink mb-3">About Me</h2>
+          
           <div class="about-content">
+
             <h5 class="text-pink mt-3"><i class="fas fa-road me-2"></i>My Journey</h5>
-            <p class="text-light-50">
+            <p>
               My journey began with a deep curiosity about how technology shapes the world around us.
               As a 3rd Year BSIT student, I've been learning the fundamentals of programming, design, and system
               development — transforming simple ideas into real digital projects.
@@ -671,70 +836,50 @@
               I want to keep improving — not just in coding, but in creativity, collaboration, and leadership.
             </p>
           </div>
-
-          <div class="mt-4 d-flex flex-wrap gap-2">
-            <a href="#projects" class="btn btn-pink">View My Projects</a>
-            <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="py-5 bg-black text-light">
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="py-5 bg-black text-light">
     <div class="container">
       <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="text-pink fw-bold section-title">My Projects</h2>
-        <p class="text-secondary">Here are some of my recent works</p>
+        <h2 class="text-pink fw-bold section-title">Education</h2>
+        <p class="text-secondary">My academic journey</p>
       </div>
 
-      <div class="row g-4 justify-content-center">
-        <!-- Activity 4 -->
-        <div class="col-md-6 col-lg-4" data-aos="flip-left">
-          <div class="card project-card h-100">
-            <img src="display_photo.jpg" class="card-img-top" alt="Canon Camera Showcase">
-            <div class="card-body bg-dark text-light">
-              <h5 class="card-title text-pink">Activity 04</h5>
-              <p class="card-text">Canon Camera models & specifications showcase</p>
-              <a href="https://kjpadua.github.io/canon_showcase/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
-            </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="education-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h4 class="text-pink">Tertiary Education</h4>
+            <p class="mb-2"><strong>Bachelor of Science in Information Technology</strong></p>
+            <p class="text-secondary">2023 - Present</p>
+            <p class="mb-0">Polytechnic University of the Philippines</p>
+            <p class="text-secondary">3rd Year Student</p>
           </div>
         </div>
 
-        <!-- Activity 5 -->
-        <div class="col-md-6 col-lg-4" data-aos="flip-up">
-          <div class="card project-card h-100">
-            <img src="display_photo2.jpg" class="card-img-top" alt="Alegria Showcase">
-            <div class="card-body bg-dark text-light">
-              <h5 class="card-title text-pink">Activity 05</h5>
-              <p class="card-text">Everything you need to know about Alegria, Cebu</p>
-              <a href="https://kjpadua.github.io/alegria_showcase/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
-            </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-card">
+            <i class="fas fa-school"></i>
+            <h4 class="text-pink">Secondary Education</h4>
+            <p class="mb-2"><strong>Science, Technology, Engineering, and Mathematics</strong></p>
+            <p class="text-secondary">2021 - 2023</p>
+            <p class="mb-0">College of Sciences, Technology and Communication Inc.</p>
+            <p class="text-secondary">With Honors</p>
           </div>
         </div>
 
-        <!-- Activity 6 -->
-        <div class="col-md-6 col-lg-4" data-aos="flip-up">
-          <div class="card project-card h-100">
-            <img src="display_photo3.png" class="card-img-top" alt="Rolls-Royce Gallery">
-            <div class="card-body bg-dark text-light">
-              <h5 class="card-title text-pink">Activity 06</h5>
-              <p class="card-text">Rolls-Royce models gallery with dynamic filtering</p>
-              <a href="https://kjpadua.github.io/gallery_ph/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Activity 7 -->
-        <div class="col-md-6 col-lg-4" data-aos="flip-up">
-          <div class="card project-card h-100">
-            <img src="display_photo4.png" class="card-img-top" alt="Cat API">
-            <div class="card-body bg-dark text-light">
-              <h5 class="card-title text-pink">Activity 07</h5>
-              <p class="card-text">Purrfect Cats: Your daily dose of adorable felines</p>
-              <a href="https://kjpadua.github.io/Cat_API/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
-            </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="education-card">
+            <i class="fas fa-award"></i>
+            <h4 class="text-pink">Achievements</h4>
+            <p class="mb-2"><strong>Academic Excellence Award</strong></p>
+            <p class="text-secondary">2019 - 2026</p>
+            <p class="mb-2"><strong>Professional Writing & Documentation</strong></p>
+            <p class="text-secondary">2022</p>
           </div>
         </div>
       </div>
@@ -742,10 +887,10 @@
   </section>
 
   <!-- ===== SKILLS ===== -->
-  <section id="skills" class="py-5 bg-dark text-light">
+  <section id="skills" class="py-5 bg-black text-light">
     <div class="container" data-aos="fade-up">
       <div class="text-center mb-5">
-        <h2 class="fw-bold text-pink section-title">Skills & Tools</h2>
+        <h2 class="fw-bold text-pink section-title">Technical Skills</h2>
         <p class="text-secondary">Technologies I use and learn</p>
       </div>
       <div class="row g-3 justify-content-center">
@@ -777,39 +922,203 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="py-5 bg-black text-light">
-    <div class="container text-center" data-aos="fade-up">
-      <h2 class="text-pink fw-bold section-title mb-3">Contact Me</h2>
-      <p class="mb-4">Let's connect! You can reach me through:</p>
-      
-      <div class="contact-info mb-4">
-        <p class="mb-2">
-          <i class="fas fa-envelope text-pink me-2"></i>
-          <strong>Email:</strong> kjpadua.au@gmail.com
-        </p>
-        <p class="mb-2">
-          <i class="fas fa-phone text-pink me-2"></i>
-          <strong>Phone:</strong> +63 945 984 1211
-        </p>
-        <p class="mb-2">
-          <i class="fab fa-github text-pink me-2"></i>
-          <strong>GitHub:</strong> <a href="https://github.com/kjpadua" class="text-pink text-decoration-none">github.com/kjpadua</a>
-        </p>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="py-5 bg-black text-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="text-pink fw-bold section-title">My Projects</h2>
+        <p class="text-secondary">Here are some of my recent works</p>
       </div>
 
-      <div class="social-icons mt-4">
-        <a href="#" class="text-pink me-3" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="#" class="text-pink me-3" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="#" class="text-pink" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+      <div class="row g-4 justify-content-center">
+        <!-- Activity 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
+          <div class="card project-card h-100">
+            <img src="display_photo.jpg" class="card-img-top" alt="Canon Camera Showcase">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Activity 04</h5>
+              <p class="card-text">Canon Camera models & specifications showcase</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge bg-pink text-black">HTML/CSS</span>
+                <a href="https://kjpadua.github.io/canon_showcase/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="flip-up">
+          <div class="card project-card h-100">
+            <img src="display_photo2.jpg" class="card-img-top" alt="Alegria Showcase">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Activity 05</h5>
+              <p class="card-text">Everything you need to know about Alegria, Cebu</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge bg-pink text-black">Web Design</span>
+                <a href="https://kjpadua.github.io/alegria_showcase/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="flip-up">
+          <div class="card project-card h-100">
+            <img src="display_photo3.png" class="card-img-top" alt="Rolls-Royce Gallery">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Activity 06</h5>
+              <p class="card-text">Rolls-Royce models gallery with dynamic filtering</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge bg-pink text-black">JavaScript</span>
+                <a href="https://kjpadua.github.io/gallery_ph/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 7 -->
+        <div class="col-md-6 col-lg-4" data-aos="flip-up">
+          <div class="card project-card h-100">
+            <img src="display_photo4.png" class="card-img-top" alt="Cat API">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-pink">Activity 07</h5>
+              <p class="card-text">Purrfect Cats: Your daily dose of adorable felines</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="badge bg-pink text-black">API Integration</span>
+                <a href="https://kjpadua.github.io/Cat_API/" target="_blank" class="btn btn-pink btn-sm">View Activity</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LANGUAGES ===== -->
+  <section class="py-5 bg-dark text-light">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-pink section-title">Languages</h2>
+        <p class="text-secondary">Communication skills</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="language-card">
+            <i class="fas fa-language fa-3x text-pink mb-3"></i>
+            <h4>English</h4>
+            <div class="language-level">Professional Working Proficiency</div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="language-card">
+            <i class="fas fa-language fa-3x text-pink mb-3"></i>
+            <h4>Filipino</h4>
+            <div class="language-level">Native Speaker</div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+ <!-- ===== HOBBIES & INTERESTS ===== -->
+<section class="py-5 bg-black text-light">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-pink section-title">Hobbies & Interests</h2>
+      <p class="text-secondary">What I enjoy outside of coding</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-3 col-6" data-aos="zoom-in">
+        <div class="hobby-card">
+          <i class="fas fa-code"></i>
+          <h5>Coding</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="50">
+        <div class="hobby-card">
+          <i class="fas fa-hands-helping"></i>
+          <h5>Community Service</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="hobby-card">
+          <i class="fas fa-headphones"></i>
+          <h5>Music</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="150">
+        <div class="hobby-card">
+          <i class="fas fa-paint-brush"></i>
+          <h5>Painting</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="hobby-card">
+          <i class="fas fa-book"></i>
+          <h5>Reading</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="250">
+        <div class="hobby-card">
+          <i class="fas fa-utensils"></i>
+          <h5>Cooking</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="hobby-card">
+          <i class="fas fa-dumbbell"></i>
+          <h5>Fitness</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="350">
+        <div class="hobby-card">
+          <i class="fas fa-plane"></i>
+          <h5>Travel</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-5 bg-dark text-light">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="text-pink fw-bold section-title mb-3">Get In Touch</h2>
+      <p class="mb-5">I'm always open to new opportunities and collaborations</p>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-info mb-4">
+            <p class="mb-3">
+              <i class="fas fa-envelope text-pink me-2"></i>
+              <strong>Email:</strong> kjpadua.au@gmail.com
+            </p>
+            <p class="mb-3">
+              <i class="fas fa-phone text-pink me-2"></i>
+              <strong>Phone:</strong> +63 945 984 1211
+            </p>
+            <p class="mb-3">
+              <i class="fab fa-github text-pink me-2"></i>
+              <strong>GitHub:</strong> <a href="https://github.com/kjpadua" class="text-pink text-decoration-none">github.com/kjpadua</a>
+            </p>
+          </div>
+
+          <div class="social-icons mt-4">
+            <a href="#" class="text-pink me-3" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="text-pink me-3" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-pink me-3" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-pink" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="text-center py-3 bg-black text-secondary">
+  <footer class="text-center py-4 bg-black text-secondary">
     <div class="container">
-      <p class="mb-0">© 2025 Kim Padua | All rights reserved.</p>
+      <p class="mb-2">© 2025 Kim Padua | All rights reserved.</p>
     </div>
   </footer>
 
